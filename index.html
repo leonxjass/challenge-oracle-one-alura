@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+
+    <title>Alura Challenge 1 Encriptador</title>
+</head>
+<body>
+    <header>
+        <img src="imagenes/Logo.svg" alt="logo del encriptador" class="logo">      
+    </header>
+    <main>
+        <section class="seccion1">
+            <div class="contenedor-caja-texto">
+                <textarea placeholder="Ingrese el Texto Aqui" id="textoEncriptado" class="caja-texto"></textarea>
+            </div>
+            <div class="alerta">
+                <img src="imagenes/alerta.svg" alt="alertadel mensaje">
+                <p>solo letras minusculas y sin acentos</p>
+            </div>
+            <div class="contenedor-botones">
+                
+                <button type="button" id="botonEncriptado" class="btn-encriptar" value="Encriptar">Encriptar</button>
+                <button type="button" id="botonDesencriptado" class="btn-desencriptar" value="Desencriptar">Desencriptar</button>
+                
+            </div>
+        </section>
+        <section class="seccion2">
+            <div class="contenedor-munieco">
+                <img src="imagenes/Muñeco.svg" alt="muniecodelchallenge">
+            </div>
+            <div class="contenedor-parrafo">
+                <h3>Ningun mensaje fue <br/>Encontrado</h3>
+                <p><br/>Ingresa el texto que desees Encriptar o<br/>Desencriptar</p>
+            </div>
+            <div class="contenedor-copiar">
+                <button id="#" class="btn-copiar">Copiar</button>
+            </div>
+            <div class="contenedor-resultado">
+                <p  id="textoDesencriptado" class="texto-resultado"></p>
+            </div>
+        </section>
+    </main>
+
+    <script type="text/javascript" src="script.js"></script>
+
+
+</body>
+
+<script>
+    var btn = document.querySelector("#botonEncriptado");
+    btn.onclick = encriptar;
+
+    var btn2 = document.querySelector("#botonDesencriptado");
+    btn2.onclick = encriptar2;
+/*
+    var btn3 = document.querySelector("#botonDesencriptado");
+    btn3.onclick = encriptar2;
+*/
+</script>
+
+</html>
